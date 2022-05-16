@@ -2,7 +2,6 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    int n=0;
     int x1 = 5;          // => 5
     int x2 = x1 + 8;     // => 13
     int x3 = x2 / 2;     // => 6

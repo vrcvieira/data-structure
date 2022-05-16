@@ -1,13 +1,16 @@
 #include <iostream>
 using namespace std;
+
+class P
+{
+public:
+    int x;
+    char y;
+};
+
 int main(int argc, char const *argv[])
-{ 
-    class P
-    {
-    public:
-        int x;
-        char y;
-    };
+{
+
     // declara variável tipo P
     P p1; // na declaração explícita, p1 vira uma variável do tipo P
     p1.x = 5;
@@ -22,9 +25,14 @@ int main(int argc, char const *argv[])
     p3.x = 15;
     p3.y = 'b';
 
-    cout << p1.x << endl << p1.y << endl;
-    cout << endl << p2->x << endl << p2->y << endl;
-    cout << endl << p3.x << endl  << p3.y;
+    cout << p1.x << endl
+         << p1.y << endl;
+    cout << endl
+         << p2->x << endl
+         << p2->y << endl;
+    cout << endl
+         << p3.x << endl
+         << p3.y;
 
     return 0;
 }
